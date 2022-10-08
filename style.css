@@ -9,11 +9,11 @@
 html {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
-  --color-primary1: #242324;
+  --color-primary1: #efedf2;
   --color-primary2: var(--color-primary1);
   --color-secondary1: #d2d3ca;
   --color-secondary2: #d6c4a6;
-  --color-accent1: #fc2d2b;
+  --color-accent1: #e92b41;
   --color-accent2: #0c0f14;
   --font-headings: "Lato", sans-serif;
   --font-buttons: "Francois One", sans-serif;
@@ -21,17 +21,29 @@ html {
 
 /* Darkmode */
 html[data-theme="dark"] {
+  --color-primary1: #202020;
+  --color-primary2: #3b3355;
+  --color-secondary1: #5d5d81;
+  --color-secondary2: var(--color-secondary1);
+  --color-accent1: #bfcde0;
+  --color-accent2: #f5f5f5;
+  --font-headings: "Lato", sans-serif;
+  --font-buttons: "Francois One", sans-serif;
+}
+
+/*html[data-theme="dark"] {
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
-  --color-primary1: #ada7ad;
+  --color-primary1: #242324;
   --color-primary2: var(--color-primary1);
   --color-secondary1: #d2d3ca;
   --color-secondary2: #d6c4a6;
-  --color-accent1: #fc2d2b;
+  --color-accent1: #e92b41;
   --color-accent2: #0c0f14;
   --font-headings: "Lato", sans-serif;
   --font-buttons: "Francois One", sans-serif;
 }
+*/
 
 input[type="checkbox"] {
   /* styling for input element */
@@ -82,12 +94,12 @@ label:active:after {
 }
 
 :root {
-  --color-primary1: #242324;
-  --color-primary2: var(--color-primary1);
-  --color-secondary1: #d2d3ca;
-  --color-secondary2: #d6c4a6;
-  --color-accent1: #fc2d2b;
-  --color-accent2: #0c0f14;
+  --color-primary1: #f5f5f5;
+  --color-primary2: #bfcde0;
+  --color-secondary1: #5d5d81;
+  --color-secondary2: var(--color-secondary1);
+  --color-accent1: #3b3355;
+  --color-accent2: #0d0e0e;
   --font-headings: "Lato", sans-serif;
   --font-buttons: "Francois One", sans-serif;
 
@@ -124,7 +136,7 @@ h3 {
 }
 
 p {
-  color: var(--color-secondary1);
+  color: #222;
   font-family: var(--font-headings);
   font-weight: 400;
   font-size: 1rem;
@@ -153,12 +165,12 @@ button {
   text-align: center;
   text-decoration: none;
   background-color: var(--color-accent1);
-  color: var(--color-secondary1);
+  color: var(--color-primary1);
 }
 
 .dark_button {
   background-color: var(--color-accent1);
-  color: var(--color-secondary1);
+  color: var(--color-primary1);
 }
 
 input[type="text"] {
@@ -179,11 +191,11 @@ nav {
   padding: 1rem;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-accent2);
+  background-color: var(--color-primary2);
 }
 
 nav a {
-  color: var(--color-secondary1);
+  color: var(--color-accent2);
   text-decoration: none;
   font-family: var(--font-headings);
 }
@@ -211,7 +223,7 @@ header {
 }
 
 header p {
-  color: #ddd;
+  color: var(--color-accent2);
 }
 
 header button {
@@ -254,7 +266,7 @@ header button {
 }
 
 #product p {
-  color: var(--color-secondary1);
+  color: var(--color-accent2);
 }
 
 #product article {
@@ -302,7 +314,7 @@ header button {
   padding: 2rem;
   align-items: center;
   justify-content: space-around;
-  background-color: var(--color-secondary1);
+  background-color: var(--color-primary2);
 }
 
 .highlight div {
@@ -315,7 +327,7 @@ header button {
 }
 
 .highlight h2 {
-  color: var(--color-primary1);
+  color: var(--color-accent2);
 }
 
 .dark {
@@ -337,6 +349,7 @@ header button {
   padding: 2rem;
   align-items: center;
   justify-content: space-around;
+  background-color: var(--color-primary1);
 }
 
 #request div {
@@ -344,9 +357,12 @@ header button {
   min-width: 300px;
 }
 
-#request h2,
-p {
-  color: var(--color-primary1);
+#request h2 {
+  color: var(--color-secondary1);
+}
+
+#request p {
+  color: var(--color-accent2);
 }
 
 #request button {
@@ -360,18 +376,18 @@ footer {
   align-items: top;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: var(--color-primary1);
+  background-color: var(--color-primary2);
   color: var(--color-secondary1);
 }
 
 footer h2,
 footer h3 {
-  color: #eee;
+  color: var(--color-accent2);
   margin-bottom: 1rem;
 }
 
 footer a {
-  color: #ddd;
+  color: var(--color-accent1);
 }
 
 footer section.left {

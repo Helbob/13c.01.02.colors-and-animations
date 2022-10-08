@@ -1,4 +1,10 @@
 "use strict";
+import {
+  animate,
+  scroll,
+  stagger,
+  inView,
+} from "https://cdn.skypack.dev/motion";
 
 let theme = localStorage.getItem("data-theme");
 const changeThemeToDark = () => {
@@ -20,3 +26,5 @@ checkbox.addEventListener("change", () => {
     changeThemeToDark();
   }
 });
+
+animate("body", { opacity: [0, 1] }, { duration: 1.5 });
