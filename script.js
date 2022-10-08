@@ -29,3 +29,13 @@ checkbox.addEventListener("change", () => {
 
 scroll(animate(".progress", { scaleX: [0, 1] }));
 animate("body", { opacity: [0, 1] }, { duration: 1.5 });
+
+const rocket = document.querySelector("#rocket");
+const properties = {
+  duration: 1000,
+  iterations: 1,
+  direction: "alternate",
+  easing: "ease-in-out",
+};
+const keyframes = [{ transform: "translate(0vw, 20vw)" }, ,];
+rocket.animate(keyframes, properties);
