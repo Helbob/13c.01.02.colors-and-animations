@@ -51,14 +51,21 @@ input[type="checkbox"] {
   width: 0;
   visibility: hidden;
 }
-
+.progress {
+  position: fixed;
+  z-index: 200;
+  transform-origin: left;
+  height: 5px;
+  width: 100vw;
+  background-color: var(--color-accent1);
+}
 label {
   /* styling for labels */
   cursor: pointer;
   text-indent: -9999px;
   width: 52px;
   height: 27px;
-  background: #1ba80e;
+  background: var(--color-secondary1);
   float: right;
   border-radius: 100px;
   position: relative;
