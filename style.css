@@ -60,7 +60,7 @@ input[type="checkbox"] {
   background-color: var(--color-accent1);
 }
 
-section h2 {
+.fade {
   display: block;
   opacity: 0;
 }
