@@ -6,17 +6,17 @@
 }
 
 /* Colors, fonts */
-html {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.2em;
-  --color-primary1: #efedf2;
-  --color-primary2: var(--color-primary1);
-  --color-secondary1: #d2d3ca;
-  --color-secondary2: #d6c4a6;
-  --color-accent1: #e92b41;
-  --color-accent2: #0c0f14;
+:root {
+  --color-primary1: #f5f5f5;
+  --color-primary2: #bfcde0;
+  --color-secondary1: #5d5d81;
+  --color-secondary2: var(--color-secondary1);
+  --color-accent1: #3b3355;
+  --color-accent2: #0d0e0e;
   --font-headings: "Lato", sans-serif;
   --font-buttons: "Francois One", sans-serif;
+
+  /* Notice you can do this: --color-accent2: var(--color-accent1);*/
 }
 
 /* Darkmode */
@@ -46,11 +46,12 @@ html[data-theme="dark"] {
 */
 
 input[type="checkbox"] {
-  /* styling for input element */
   height: 0;
   width: 0;
   visibility: hidden;
 }
+
+/* Animation top bar */
 .progress {
   position: fixed;
   z-index: 200;
@@ -60,6 +61,7 @@ input[type="checkbox"] {
   background-color: var(--color-accent1);
 }
 
+/* Animation fade */
 .fade {
   display: block;
   opacity: 0;
@@ -104,19 +106,6 @@ input:checked + label:after {
 
 label:active:after {
   width: 45px;
-}
-
-:root {
-  --color-primary1: #f5f5f5;
-  --color-primary2: #bfcde0;
-  --color-secondary1: #5d5d81;
-  --color-secondary2: var(--color-secondary1);
-  --color-accent1: #3b3355;
-  --color-accent2: #0d0e0e;
-  --font-headings: "Lato", sans-serif;
-  --font-buttons: "Francois One", sans-serif;
-
-  /* Notice you can do this: --color-accent2: var(--color-accent1);*/
 }
 
 h1,
